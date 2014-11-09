@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1415477643 source:d:\dropbox\utfpr\engenharia\3periodo\estruturas\exercicios\filapila\enunciado.cpp
+
+1415498762 source:d:\dropbox\utfpr\engenharia\3periodo\estruturas\exercicios\filapila\src\main.cpp
+	<iostream>
+	"Pilha.h"
+	"Fila.h"
+
+1415498201 d:\dropbox\utfpr\engenharia\3periodo\estruturas\exercicios\filapila\include\pilha.h
+
+1415498201 source:d:\dropbox\utfpr\engenharia\3periodo\estruturas\exercicios\filapila\src\pilha.cpp
+	<iostream>
+	"Pilha.h"
+
+1415498726 source:d:\dropbox\utfpr\engenharia\3periodo\estruturas\exercicios\filapila\src\fila.cpp
+	<iostream>
+	"Fila.h"
+
+1415498726 d:\dropbox\utfpr\engenharia\3periodo\estruturas\exercicios\filapila\include\fila.h
+
+1415477643 source:d:\github\ed1-exercicio2\enunciado.cpp
+
+1415498726 source:d:\github\ed1-exercicio2\src\fila.cpp
+	<iostream>
+	"Fila.h"
+
+1415498726 d:\github\ed1-exercicio2\include\fila.h
+
+1415498762 source:d:\github\ed1-exercicio2\src\main.cpp
+	<iostream>
+	"Pilha.h"
+	"Fila.h"
+
+1415498201 d:\github\ed1-exercicio2\include\pilha.h
+
+1415498201 source:d:\github\ed1-exercicio2\src\pilha.cpp
+	<iostream>
+	"Pilha.h"
+

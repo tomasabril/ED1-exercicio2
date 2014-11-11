@@ -16,8 +16,9 @@ struct Head {
 class Pilha
 {
 private:
-    Head * head;
+
 public:
+    Head * head;
     Pilha();
     void inclui(int valor);
     void remover();

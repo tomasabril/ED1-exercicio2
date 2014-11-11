@@ -18,6 +18,17 @@ Pilhas/Fila
 -> remoção fila
 -> msm "fila vazia" e "pilha vazia"
 -> msms de erro
+
+----------------
+imprimir topo da fila e pilha juntos
+nao pode remover da pilha
+nao pode perguntar tamanho. tem q ser sempre 5 de 0 a 4
+
+
+
+--------
+
+
 */
 //Autores:
 ///Allan Patrick

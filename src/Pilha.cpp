@@ -1,5 +1,5 @@
 /*
-header topo aponta para o ultimo adiciodado
+header topo aponta para o ultimo adicionado
 no prox aponta em direcao ao ultimo adicionado
 no ant aponta em direcao ao primeiro adicionado
 */
@@ -24,9 +24,12 @@ void Pilha::inclui(int valor)
     No * no = new No;
     no->dado = valor;
     no->prox = NULL;
-    if (head->tamanho == 0) {
+    if (head->tamanho == 0)
+    {
         no->ant = NULL;
-    } else {
+    }
+    else
+    {
         no->ant = head->topo;
         (head->topo)->prox = no;
     }
@@ -36,37 +39,44 @@ void Pilha::inclui(int valor)
 
 void Pilha::remover()
 {
-    if(head->tamanho > 1) {
+    if(head->tamanho > 1)
+    {
         head->topo = (head->topo)->ant ;
         delete (head->topo)->prox;
         (head->topo)->prox = NULL;
         head->tamanho --;
     }
 
-    else if(head->tamanho == 1) {
+    else if(head->tamanho == 1)
+    {
         delete head->topo;
         head->topo = NULL;
         head->tamanho = 0;
-    } else if(head->tamanho == 0) {
+    }
+    else if(head->tamanho == 0)
+    {
         cout << "Pilha já está vazia\n";
     }
 }
 
 void Pilha::imprime()
 {
-    cout << "\n Header\n";
-    cout << "tamanho: " << head->tamanho
-         << "\ntopo: " << head->topo;
-
-    if(head->tamanho == 0) {
-        cout << "\n nao existe nenhum nó na Pilha \n";
-    } else {
-        cout << "\n dado: " << (head->topo)->dado << "\n";
+    if(head->tamanho == 0)
+    {
+        cout << "\n A Pilha esta vazia \n";
+    }
+    else
+    {
+        cout << "\n Pilha\n";
+        //cout << "tamanho: " << head->tamanho;
+        //cout << "\ntopo: " << head->topo;
+        cout << "\n dado do topo: " << (head->topo)->dado << "\n";
     }
 }
 
 int Pilha::lerDado()
 {
+    cout << "\n valor a ser movido " << (head->topo)->dado;
     return (head->topo)->dado;
 }
 

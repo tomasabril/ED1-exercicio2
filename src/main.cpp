@@ -8,13 +8,10 @@ void interage(Pilha *o1, Fila *o2);
 
 int main()
 {
-    //cout << "Hello world!";
-
     Pilha pilha;
     Fila fila;
 
-    while(true)
-    {
+    while(true) {
         interage(&pilha, &fila);
     }
 
@@ -35,8 +32,7 @@ void interage(Pilha *o1, Fila *o2)
 
     cin >> op;
 
-    switch(op)
-    {
+    switch(op) {
     case 1:
         int valor;
         cout << "\ndigite valor: ";
@@ -44,15 +40,11 @@ void interage(Pilha *o1, Fila *o2)
         (*o1).inclui(valor);
         break;
     case 2:
-        if( ((*o1).head->tamanho) != 0 )
-        {
-            if( (*o2).adicionar((*o1).lerDado()) )
-            {
+        if( ((*o1).head->tamanho) != 0 ) {
+            if( (*o2).adicionar((*o1).lerDado()) ) {
                 (*o1).remover();
             }
-        }
-        else
-        {
+        } else {
             cout << "\n Pilha está vazia";
         }
         break;
@@ -63,9 +55,6 @@ void interage(Pilha *o1, Fila *o2)
     case 4:
         (*o2).remover();
         break;
-
-
-
     default:
         cout << "opção invalida\n";
     }

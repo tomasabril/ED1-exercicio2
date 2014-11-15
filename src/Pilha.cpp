@@ -18,18 +18,12 @@ Pilha::Pilha()
 
 void Pilha::inclui(int valor)
 {
-    //int valor;
-    //cout << "digite valor\n";
-    //cin >> valor;
     No * no = new No;
     no->dado = valor;
     no->prox = NULL;
-    if (head->tamanho == 0)
-    {
+    if (head->tamanho == 0) {
         no->ant = NULL;
-    }
-    else
-    {
+    } else {
         no->ant = head->topo;
         (head->topo)->prox = no;
     }
@@ -39,37 +33,26 @@ void Pilha::inclui(int valor)
 
 void Pilha::remover()
 {
-    if(head->tamanho > 1)
-    {
+    if(head->tamanho > 1) {
         head->topo = (head->topo)->ant ;
         delete (head->topo)->prox;
         (head->topo)->prox = NULL;
         head->tamanho --;
-    }
-
-    else if(head->tamanho == 1)
-    {
+    } else if(head->tamanho == 1) {
         delete head->topo;
         head->topo = NULL;
         head->tamanho = 0;
-    }
-    else if(head->tamanho == 0)
-    {
+    } else if(head->tamanho == 0) {
         cout << "Pilha já está vazia\n";
     }
 }
 
 void Pilha::imprime()
 {
-    if(head->tamanho == 0)
-    {
+    if(head->tamanho == 0) {
         cout << "\n A Pilha esta vazia \n";
-    }
-    else
-    {
+    } else {
         cout << "\n Pilha\n";
-        //cout << "tamanho: " << head->tamanho;
-        //cout << "\ntopo: " << head->topo;
         cout << "\n dado do topo: " << (head->topo)->dado << "\n";
     }
 }
